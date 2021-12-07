@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple White Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <canvas id="canvas" width="400" height="400"></canvas>
+
+    <section class="tools">
+        <div class="toolbox">
+            <button id="decrease">-</button>
+            <!-- <span id="size">10</span> -->
+            <input type="number" name="num" id="size" value="10" style="padding-left: 10px;">
+            <button id="increase">+</button>
+            <input type="color" id="color">
+            <button id="eraser"><i class="fa fa-eraser"></i></button>
+            <button id="clear">X</button>
+        </div>
+
+        <h3 class="appName">SIMPLE WHITE BOARD</h3>
+
+        <div class="canvasAdjust">
+        <label for="canvasWidth">Width : </label>
+            
+        <select name="canvasW" id="canvasWidth">
+                <option value="400" selected> 400 </option>
+                <option value="600">600 </option>
+                <option value="800">800 </option>
+                <option value="screen">Fit screen</option>
+        </select>
+            
+
+        <label for="canvasHeight">Height : </label>
+        <select name="canvasH" id="canvasHeight">
+            <option value="400" selected>400 </option>
+            <option value="600">600 </option>
+            <option value="800">800 </option>
+            <option value="screen">Fit screen</option>
+        </select>
+    </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
